@@ -22,69 +22,66 @@ export default function System() {
           <br />
           consectetur, from a Lorem Ipsum passage, and going through the cites
           of the word i n classical literature, discovered the undoubtable sou
-          rce. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de
-          Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero,
-          written in 45 BC. This book is a treatise on the theory Lorem Ipsum,
-          "Lorem ipsum dolor sit amet..",
+          rce. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of Finibus
+          Bonorum e
           <br />
           <br />
           The standard chunk of Lorem Ipsum used since the 1500s is reproduced
-          below for those interested. Sections 1.10.32 and 1.10.33 from "de
-          Finibus Bonorum et Malorum" by Cicero are also repro duced in their
-          exact original form, accompanied by English versions from the 1914
-          translation b y H. Rackham.
+          below for those interested. Sections 1.10.32 and 1.10.33 from Finibus
+          Bonorum et by Cicero are also repro duced in their exact original
+          form, accompanied by English versions from the 1914 translation b y H.
+          Rackham.
           <br />
           <br />
           The standard chunk of Lorem Ipsum used since the 1500s is reproduced
-          below for those interested. Sections 1.10.32 and 1.10.33 from "de
-          Finibus Bonorum et Malorum" by Cicero are also repro duced in their
-          exact original form, accompanied by English versions from the 1914
-          translation b y H. Rackham.
+          below for those interested. Sections 1.10.32 and 1.10.33 from Finibus
+          Bonorum et by Cicero are also repro duced in their exact original
+          form, accompanied by English versions from the 1914 translation b y H.
+          Rackham.
           <br />
           <br />
           The standard chunk of Lorem Ipsum used since the 1500s is reproduced
-          below for those interested. Sections 1.10.32 and 1.10.33 from "de
-          Finibus Bonorum et Malorum" by Cicero are also repro duced in their
-          exact original form, accompanied by English versions from the 1914
-          translation b y H. Rackham.
+          below for those interested. Sections 1.10.32 and 1.10.33 from Finibus
+          Bonorum et by Cicero are also repro duced in their exact original
+          form, accompanied by English versions from the 1914 translation b y H.
+          Rackham.
           <br />
           <br />
           The standard chunk of Lorem Ipsum used since the 1500s is reproduced
-          below for those interested. Sections 1.10.32 and 1.10.33 from "de
-          Finibus Bonorum et Malorum" by Cicero are also repro duced in their
-          exact original form, accompanied by English versions from the 1914
-          translation b y H. Rackham.
+          below for those interested. Sections 1.10.32 and 1.10.33 from Finibus
+          Bonorum et by Cicero are also repro duced in their exact original
+          form, accompanied by English versions from the 1914 translation b y H.
+          Rackham.
           <br />
           <br />
           The standard chunk of Lorem Ipsum used since the 1500s is reproduced
-          below for those interested. Sections 1.10.32 and 1.10.33 from "de
-          Finibus Bonorum et Malorum" by Cicero are also repro duced in their
-          exact original form, accompanied by English versions from the 1914
-          translation b y H. Rackham.
+          below for those interested. Sections 1.10.32 and 1.10.33 from Finibus
+          Bonorum et by Cicero are also repro duced in their exact original
+          form, accompanied by English versions from the 1914 translation b y H.
+          Rackham.
           <br />
           <br />
           The standard chunk of Lorem Ipsum used since the 1500s is reproduced
-          below for those interested. Sections 1.10.32 and 1.10.33 from "de
-          Finibus Bonorum et Malorum" by Cicero are also repro duced in their
-          exact original form, accompanied by English versions from the 1914
-          translation b y H. Rackham.
+          below for those interested. Sections 1.10.32 and 1.10.33 from Finibus
+          Bonorum et by Cicero are also repro duced in their exact original
+          form, accompanied by English versions from the 1914 translation b y H.
+          Rackham.
           <br />
           <br />
           The standard chunk of Lorem Ipsum used since the 1500s is reproduced
-          below for those interested. Sections 1.10.32 and 1.10.33 from "de
-          Finibus Bonorum et Malorum" by Cicero are also repro duced in their
-          exact original form, accompanied by English versions from the 1914
-          translation b y H. Rackham.
+          below for those interested. Sections 1.10.32 and 1.10.33 from Finibus
+          Bonorum et by Cicero are also repro duced in their exact original
+          form, accompanied by English versions from the 1914 translation b y H.
+          Rackham.
           <br />
           <br />
           The standard chunk of Lorem Ipsum used since the 1500s is reproduced
-          below for those interested. Sections 1.10.32 and 1.10.33 from "de
-          Finibus Bonorum et Malorum" by Cicero are also repro duced in their
-          exact original form, accompanied by English versions from the 1914
-          translation b y H. Rackham.
+          below for those interested. Sections 1.10.32 and 1.10.33 from Finibus
+          Bonorum et by Cicero are also repro duced in their exact original
+          form, accompanied by English versions from the 1914 translation b y H.
+          Rackham.
           <p className="system-bottomStamp">
-            {' '}
-            <img src="img/stamp6.svg" width="300px" />{' '}
+            <img src="img/stamp6.svg" width="300px" />
           </p>
         </p>
       </div>

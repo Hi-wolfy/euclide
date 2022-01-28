@@ -39,6 +39,17 @@ export default function Home() {
               <img src="img/ac-hover2.png" />
             </li>
           </div>
+          <div className="middle-row-mascot">
+            <li className="leftMascot">
+              <img src="img/mascot3.png" />
+            </li>
+            <li className="middleMascot">
+              <img src="img/mascot1.png" />
+            </li>
+            <li className="rightMascot">
+              <img src="img/mascot2.png" />
+            </li>
+          </div>
         </div>
 
         <div className="home-right">

@@ -72,6 +72,11 @@ header {
       width: 90%;
       margin: auto;
 
+      li:hover {
+        transition: all 0.4s;
+        transform: rotate(365deg);
+      }
+
       img {
         padding: 10px;
       }
@@ -96,24 +101,25 @@ header {
   .home-middle {
     width: 900px;
     display: flex;
+    position: relative; //mascot 컨텐츠 부모요소
     flex-direction: column;
     align-items: center;
 
     .middle-row {
       display: flex;
       flex-direction: row;
-      align-itens: center;
-      justify-content: space-around;
+      justify-content: center;
       width: 100%;
 
       .row-ac1 {
         transform: rotate(-2deg);
         position: relative;
+        width: 700px;
 
         img:nth-child(2) {
           position: absolute;
-          top: 11px;
-          left: 10px;
+          top: 0;
+          left: 0;
           opacity: 0;
           transition: opacity 0.3s linear;
         }
@@ -126,11 +132,12 @@ header {
       .row-ac2 {
         transform: rotate(1deg);
         position: relative;
+        width: 500px;
 
         img:nth-child(2) {
           position: absolute;
-          top: 11px;
-          left: 10px;
+          top: 0;
+          left: 0;
           opacity: 0;
           transition: opacity 0.3s linear;
         }
@@ -139,12 +146,48 @@ header {
       .row-ac2:hover img:nth-child(2) {
         opacity: 1;
       }
+      .row-ac2:hover img:nth-child(1) {
+        opacity: 0;
+      }
     }
 
     .middle-row li {
       padding: 16px 2px 16px 8px;
     }
   }
+
+  // ---------- 이 밑으론 마스코트
+
+  .middle-row-mascot {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    justify-content: flex-start;
+    position: absolute;
+    bottom: 0;
+    width: 80%;
+
+    li.leftMascot {
+      width: 190px;
+    }
+
+    li.middleMascot {
+      width: 146px;
+      position: absolute;
+      bottom: 0;
+      left: 15%;
+      z-index: 5;
+    }
+
+    li.rightMascot {
+      width: 200px;
+      position: relative;
+      left: 10%;
+      transform: translateY(10px);
+    }
+  }
+
+  //  ---------
 
   .home-right {
     width: 150px;
