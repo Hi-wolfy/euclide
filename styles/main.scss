@@ -19,6 +19,13 @@
   width: 0;
 }
 
+img {
+  // pointer-events: none;
+  -webkit-touch-callout:none;
+  -webkit-user-drag: none;
+
+}
+
 // ::-webkit-scrollbar-thumb {
 //   background-color: #ffc13c;
 //   background-clip: padding-box;

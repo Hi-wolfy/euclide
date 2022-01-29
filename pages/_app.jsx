@@ -11,9 +11,9 @@ function MyApp({ Component, pageProps }) {
   return (
     <div
       className="MainWrap"
-      onContextMenu="return false"
-      onSelectStart="return false"
-      onDragStart="return false"
+      oncontextmenu="return false"
+      onselectstart="return false"
+      ondragstart="return false"
       onKeyDown="return false"
     >
       <Script
