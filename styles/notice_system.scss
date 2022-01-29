@@ -1,6 +1,8 @@
 .noticeWrap {
   width: 1000px;
   margin: 0 auto;
+  padding: 100px 0;
+  height: 100%;
 
   .notice-frame {
     width: 160px;
@@ -53,13 +55,14 @@
 
 @media all and (min-width: 320px) and (max-width: 768px) {
   .noticeWrap {
-    width: 95%;
-    margin: 0 auto 80px;
+    width: 100%;
+    margin: 0 auto;
   }
 
   .noticePaper {
-    width: 100%;
+    width: 94%;
     height: auto;
+    margin: 0 auto;
     font-size: 0.8rem;
   }
 }

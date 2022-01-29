@@ -1,21 +1,15 @@
 import React from 'react';
-import '../styles/reset.css';
 import '../styles/main.scss';
 import '../styles/notice_system.scss';
 import '../styles/world.scss';
 import '../styles/guest.scss';
+import '../styles/index.scss';
 import Header from '../components/Header';
 import Script from 'next/script';
 
 function MyApp({ Component, pageProps }) {
   return (
-    <div
-      className="MainWrap"
-      oncontextmenu="return false"
-      onselectstart="return false"
-      ondragstart="return false"
-      onKeyDown="return false"
-    >
+    <div className="MainWrap">
       <Script
         src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
         integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"

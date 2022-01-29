@@ -1,9 +1,33 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-size: 16px;
+}
+
 * {
   box-sizing: border-box;
+  list-style: none;
   font-family: 'Noto Serif KR', serif;
 }
 
+a {
+  color: inherit;
+  text-decoration: none !important;
+  display: block;
+  transition: color 0.2s;
+}
+
+a:hover {
+  color: #da4500;
+}
+
 @import url('https://fonts.googleapis.com/css2?family=Do+Hyeon&family=Jua&family=Noto+Serif+KR:wght@300;400;700;900&display=swap');
+
+@font-face {
+  font-family: 'timmer';
+  src: url('/fonts/timmer.ttf') format('truetype');
+}
 
 ::-moz-selection {
   background: #ffc13c;
@@ -21,9 +45,12 @@
 
 img {
   // pointer-events: none;
-  -webkit-touch-callout:none;
-  -webkit-user-drag: none;
-
+  -webkit-touch-callout: none !important;
+  -webkit-user-drag: none !important;
+  user-select: none !important;
+  -moz-user-select: none !important;
+  -ms-user-select: none !important;
+  -webkit-user-select: none !important;
 }
 
 // ::-webkit-scrollbar-thumb {
@@ -37,10 +64,6 @@ img {
 //   background-color: white;
 // }
 
-html {
-  background-origin: initial;
-}
-
 body {
   -webkit-touch-callout: none;
   background-image: url(/img/bg.png);
@@ -48,6 +71,12 @@ body {
   height: 100%;
   width: 100vw;
   // background-size:contain;
+}
+
+.MainWrap {
+  height: 100%;
+  margin: 0;
+  padding: 0;
 }
 
 // 모바일 안보이게 하기
@@ -63,6 +92,7 @@ header {
   font-family: 'timmer';
   position: sticky;
   z-index: 1000;
+  color: #000;
   top: 0;
   box-shadow: 0 2px 15px rgba(0, 0, 0, 0.11), 0 3px 15px rgba(0, 0, 0, 0.11);
 
@@ -83,187 +113,6 @@ header {
 
   img {
     width: 30px;
-  }
-}
-
-// 모바일 인덱스
-.MoIndex img {
-  width: 100%;
-  padding: 24px;
-}
-
-// PC홈
-.homePCWrap {
-  width: 1200px;
-  margin: 40px auto 0;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  font-family: 'Noto Serif KR', serif;
-
-  .home-left {
-    width: 150px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
-    .left-stamp {
-      width: 90%;
-      margin: auto;
-      font-weight: 900;
-      color: #000;
-      font-size: 0.85rem;
-
-      li img:hover {
-        transition: all 0.8s;
-        transform: rotate(300deg);
-        filter: none;
-        opacity: 1;
-      }
-
-      img {
-        padding: 10px;
-        filter: grayscale(80%);
-        opacity: 0.7;
-      }
-
-      span {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-      }
-    }
-
-    .left-stamping {
-      width: 320px;
-      transform: translate(30px, 70px);
-      // 위에거 translate로 바꿔야 할듯함
-      z-index: 5;
-    }
-  }
-
-  .home-middle {
-    width: 900px;
-    display: flex;
-    position: relative; //mascot 컨텐츠 부모요소
-    flex-direction: column;
-    align-items: center;
-
-    .uk-grid-small {
-      display: flex;
-      flex-direction: row;
-      width: 100%;
-      height: 50px;
-      justify-content: left;
-      color: #000;
-      padding-left: 30px;
-      transform: translateY(60px);
-
-      div.uk-countdown-number {
-        font-size: 2rem;
-        font-weight: 900;
-      }
-
-      div.uk-countdown-label {
-        font-size: 0.8rem;
-      }
-    }
-
-    .middle-row {
-      display: flex;
-      flex-direction: row;
-      justify-content: center;
-      width: 100%;
-
-      .row-ac1 {
-        transform: rotate(-1deg);
-        position: relative;
-        width: 700px;
-      }
-      .row-ac2 {
-        transform: rotate(0.5deg);
-        position: relative;
-        width: 500px;
-      }
-
-      .uk-inline div {
-        transform: translate(-10px, 20px);
-        font-size: 1.3rem;
-        font-weight: 900;
-        color: #000;
-        text-shadow: #fc0 1px 0 10px;
-      }
-    }
-
-    .middle-row li {
-      padding: 16px 2px 16px 8px;
-    }
-  }
-
-  // ---------- 이 밑으론 마스코트
-
-  .middle-row-mascot {
-    display: flex;
-    flex-direction: row;
-    align-items: baseline;
-    justify-content: flex-start;
-    position: absolute;
-    bottom: 0;
-    width: 80%;
-
-    li.leftMascot {
-      width: 190px;
-    }
-
-    li.middleMascot {
-      width: 146px;
-      position: absolute;
-      bottom: 0;
-      left: 15%;
-      z-index: 5;
-    }
-
-    li.rightMascot {
-      width: 200px;
-      position: relative;
-      left: 10%;
-      transform: translateY(10px);
-    }
-  }
-
-  //  ---------
-
-  .home-right {
-    width: 150px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 24px 0;
-
-    .right-twitter {
-      width: 30%;
-    }
-
-    .right-kirring {
-      width: 100%;
-      margin: 8px 0 30px;
-    }
-
-    .right-search {
-      width: 100%;
-      position: relative;
-      top: 20px;
-      z-index: 5;
-    }
-
-    .right-newspaper {
-      width: 150%;
-      position: relative;
-      top: -40px;
-    }
-  }
-  img {
-    width: 100%;
   }
 }
 
@@ -296,29 +145,6 @@ header {
     }
     img {
       width: 200px;
-    }
-  }
-}
-
-@media all and (min-width: 320px) and (max-width: 768px) {
-  .homePCWrap {
-    display: none;
-  }
-
-  .homeMobileWrap {
-    display: flex;
-    justify-content: center;
-    padding: 7rem 0 10rem;
-
-    li {
-      max-width: 400px;
-      min-width: 300px;
-      width: 90%;
-      transform: translatex(8px);
-    }
-
-    img {
-      width: 100%;
     }
   }
 }

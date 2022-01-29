@@ -30,27 +30,28 @@ export default function Home() {
             uk-grid
             uk-countdown="date: 2022-03-01T12:18:21+00:00"
           >
+            <label>신청서 접수 <br /> 시작까지</label>
             <div>
               <div className="uk-countdown-number uk-countdown-days"></div>
               <div className="uk-countdown-label uk-margin-small uk-text-center uk-visible@s">
                 Days
               </div>
             </div>
-            &emsp;
+            &nbsp;
             <div>
               <div className="uk-countdown-number uk-countdown-hours"></div>
               <div className="uk-countdown-label uk-margin-small uk-text-center uk-visible@s">
                 Hours
               </div>
             </div>
-            &emsp;
+            &nbsp;
             <div>
               <div className="uk-countdown-number uk-countdown-minutes"></div>
               <div className="uk-countdown-label uk-margin-small uk-text-center uk-visible@s">
                 Minutes
               </div>
             </div>
-            &emsp;
+            &nbsp;
             <div>
               <div className="uk-countdown-number uk-countdown-seconds"></div>
               <div className="uk-countdown-label uk-margin-small uk-text-center uk-visible@s">
@@ -59,7 +60,7 @@ export default function Home() {
             </div>
           </div>
 
-          <li>
+          <li className="middle-schedule">
             <img src="img/schedule.png" />
           </li>
 
