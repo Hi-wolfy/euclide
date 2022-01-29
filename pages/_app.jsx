@@ -8,15 +8,12 @@ import Header from '../components/Header';
 import Script from 'next/script';
 
 function MyApp({ Component, pageProps }) {
-  document.oncontextmenu = function () {
-    return false;
-  }; //우클릭방지
   return (
     <div
       className="MainWrap"
       onContextMenu="return false"
       onSelectStart="return false"
-      // onDragStart="return false"
+      onDragStart="return false"
       onKeyDown="return false"
     >
       <Script
