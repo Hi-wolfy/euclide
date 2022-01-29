@@ -5,7 +5,6 @@ export default function Home() {
   return (
     <article className="main">
       <div className="homePCWrap">
-        {/* <MoIndex /> */}
         <div className="home-left">
           <ul className="left-stamp">
             <li>
@@ -67,16 +66,7 @@ export default function Home() {
           </li>
         </div>
       </div>
-
-      <div className="homeMobileWrap">
-        <li>
-          <img src="img/mo-schedule.png" />
-        </li>
-        <h4>
-          메인 페이지는 모바일에 최적화되어있지 않습니다 그치만 컨텐츠는
-          열람하실 수 있도록 아래 링크를 마련했으니 접속이 가능합니다~!
-        </h4>
-      </div>
+      <MoIndex />
     </article>
   );
 }

@@ -1,6 +1,5 @@
 import Document, { Html, Head, Main, NextScript } from 'next/document';
 
-
 class MyDocument extends Document {
   static async getInitialProps(ctx) {
     const initialProps = await Document.getInitialProps(ctx);
@@ -11,7 +10,7 @@ class MyDocument extends Document {
     return (
       <Html>
         <Head>
-          <title>Document로 가세여</title>
+          <title>Euclide Hotel</title>
           <meta charset="UTF-8" />
           <meta name="description" content="날득씨의 프로필 사이트예요" />
           {/* <meta name="keywords" content="키워드,프로필,설명서,달늑대,날득씨" /> */}
@@ -47,7 +46,6 @@ class MyDocument extends Document {
             rel="stylesheet"
             integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
           />
-       
 
           {/* 메인 폰트 */}
 
@@ -61,8 +59,6 @@ class MyDocument extends Document {
           />
 
           {/* 트윈맥스 */}
-
-       
         </Head>
         <body>
           <Main />

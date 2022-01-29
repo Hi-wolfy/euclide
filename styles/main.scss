@@ -4,6 +4,34 @@
   font-family: ‘SUIT Variable’, sans-serif;
 }
 
+// @import url('https://fonts.googleapis.com/css2?family=Do+Hyeon&family=Jua&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Do+Hyeon&family=Jua&family=Noto+Serif+KR:wght@400;900&display=swap');
+
+::-moz-selection {
+  background: #ffc13c;
+  color: #000;
+}
+
+::selection {
+  background: #ffc13c;
+  color: rgb(0, 0, 0);
+}
+
+::-webkit-scrollbar {
+  width: 0;
+}
+
+// ::-webkit-scrollbar-thumb {
+//   background-color: #ffc13c;
+//   background-clip: padding-box;
+//   border: 2px solid transparent;
+//   border-radius: 100px;
+//   box-shadow: inset 0px 0px 5px white;
+// }
+// ::-webkit-scrollbar-track {
+//   background-color: white;
+// }
+
 body {
   background-image: url(/img/bg.png);
   height: 100%;
@@ -223,30 +251,99 @@ header {
   }
 }
 
+// 404페이지
+
+.Custom404-Wrap {
+  width: 700px;
+  margin: 140px auto 0;
+  background-color: white;
+  font-family: 'Do Hyeon', sans-serif;
+  text-align: center;
+  line-height: 1.5;
+
+  h1 {
+    font-size: 2rem;
+
+    padding: 1.8rem 0;
+  }
+
+  .Custom404-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 1.4rem;
+
+    p {
+      width: 300px;
+      color: #666;
+      font-size: 1.2rem;
+    }
+    img {
+      width: 200px;
+    }
+  }
+}
+
 @media all and (min-width: 320px) and (max-width: 768px) {
   .homePCWrap {
     display: none;
   }
 
   .homeMobileWrap {
-    display: block;
+    display: flex;
+    justify-content: center;
+    padding: 7rem 0 10rem;
 
     li {
+      max-width: 400px;
+      min-width: 300px;
       width: 90%;
-      margin: 0 auto;
+      transform: translatex(8px);
     }
 
-    li img {
+    img {
       width: 100%;
     }
   }
 }
 
+@media all and (min-width: 320px) and (max-width: 550px) {
+  .Custom404-Wrap {
+    width: 100%;
+    padding: 2rem;
+    margin: auto;
+
+    div.Custom404-row {
+      flex-direction: column !important;
+      p {
+        font-size: 1.1rem;
+      }
+    }
+    img {
+      padding: 0 0 2rem;
+    }
+    h1 {
+      font-size: 1.8rem;
+    }
+  }
+}
+
 .small {
-  font-size: 90%;
+  font-size: 86%;
+  color: #666;
 }
 
 .bold {
   font-weight: 900;
-  color: #76170c;
+  color: #bf6a0e;
+}
+
+.title {
+  font-size: 1.8rem;
+  font-weight: 900;
+  color: #bf6a0e;
+  line-height: 3;
+  font-family: 'Noto Serif KR', serif;
+  border-bottom: 1px solid #3a1000;
 }

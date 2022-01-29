@@ -1,8 +1,8 @@
-.systemWrap {
+.noticeWrap {
   width: 1000px;
   margin: 0 auto;
 
-  .system-frame {
+  .notice-frame {
     width: 160px;
     margin: 40px auto 0;
     transform: translateY(25px);
@@ -14,8 +14,10 @@
     }
   }
 
-  .systemPaper {
-    max-width: 674px;
+  .noticePaper {
+    max-width: 800px;
+    font-family: 'Noto Serif KR', serif;
+    line-height: 1.5;
     max-height: auto;
     background-color: #fff;
     opacity: 0.8;
@@ -25,13 +27,13 @@
     overflow: hidden;
   }
 
-  .system-content {
+  .notice-content {
     width: 80%;
     height: 80%;
     margin: 40px auto;
 
     h2 {
-      width: 130px;
+      width: 200px;
       margin: 0 auto 16px;
     }
 
@@ -40,24 +42,24 @@
     }
   }
 
-  .system-bottomStamp {
+  .notice-bottomStamp {
     position: absolute;
-    width: 200px;
-    bottom: 0;
-    right: 0;
+    width: 300px;
+    bottom: -20px;
+    right: -40px;
     opacity: 0.15;
   }
 }
 
 @media all and (min-width: 320px) and (max-width: 768px) {
-  .systemWrap {
+  .noticeWrap {
     width: 95%;
     margin: 0 auto 80px;
   }
 
-  .systemPaper {
+  .noticePaper {
     width: 100%;
     height: auto;
-    font-size: 0.87rem;
+    font-size: 0.8rem;
   }
 }
