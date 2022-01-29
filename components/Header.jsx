@@ -31,10 +31,11 @@ export default function header() {
           </Link>
         </li>
 
-        <li>
-          <Link href="/guest/hiwolfy">
+        <li uk-tooltip="title: 아직 손님들이 모이지 않았습니다.; pos: bottom-right">
+          {/* <Link href="/guest/hiwolfy">
             <a>GUESTS</a>
-          </Link>
+          </Link> */}
+          GUESTS
         </li>
       </div>
     </header>

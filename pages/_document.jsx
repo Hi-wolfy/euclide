@@ -10,6 +10,7 @@ class MyDocument extends Document {
     return (
       <Html>
         <Head>
+          
           <title>Euclide Hotel</title>
           <meta charset="UTF-8" />
           <meta name="description" content="날득씨의 프로필 사이트예요" />
@@ -40,6 +41,11 @@ class MyDocument extends Document {
           <link rel="icon" href="/favicon.ico" />
 
           {/* 부트스트랩 */}
+
+          <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/uikit@3.10.1/dist/css/uikit.min.css"
+          />
 
           <link
             href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"

@@ -8,8 +8,17 @@ import Header from '../components/Header';
 import Script from 'next/script';
 
 function MyApp({ Component, pageProps }) {
+  document.oncontextmenu = function () {
+    return false;
+  }; //우클릭방지
   return (
-    <div className="MainWrap">
+    <div
+      className="MainWrap"
+      onContextMenu="return false"
+      onSelectStart="return false"
+      // onDragStart="return false"
+      onKeyDown="return false"
+    >
       <Script
         src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
         integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
@@ -34,6 +43,8 @@ function MyApp({ Component, pageProps }) {
         src=" https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"
       />
 
+      <Script src="https://cdn.jsdelivr.net/npm/uikit@3.10.1/dist/js/uikit.min.js" />
+      <Script src="https://cdn.jsdelivr.net/npm/uikit@3.10.1/dist/js/uikit-icons.min.js" />
       <Header />
       <Component {...pageProps} />
     </div>
