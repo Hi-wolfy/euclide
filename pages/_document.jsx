@@ -49,6 +49,15 @@ class MyDocument extends Document {
 
           {/* 메인 폰트 */}
 
+          <link rel="preconnect" href="https://fonts.googleapis.com" />
+
+          <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin />
+
+          <link
+            href="https://fonts.googleapis.com/css2?family=Do+Hyeon&family=Jua&family=Noto+Serif+KR:wght@300;400;700;900&display=swap"
+            rel="stylesheet"
+          />
+
           <link
             href="http://cdn.jsdelivr.net/gh/sunn-us/SUIT/fonts/static/woff2/SUIT.css"
             rel="stylesheet"
@@ -57,8 +66,6 @@ class MyDocument extends Document {
             href="http://cdn.jsdelivr.net/gh/sunn-us/SUIT/fonts/variable/woff2/SUIT-Variable.css"
             rel="stylesheet"
           />
-
-          {/* 트윈맥스 */}
         </Head>
         <body>
           <Main />

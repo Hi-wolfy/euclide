@@ -29,6 +29,11 @@ function MyApp({ Component, pageProps }) {
         src="https://unpkg.com/gsap@3/dist/ScrollToPlugin.min.js"
       />
 
+      <Script
+        type="text/javascript"
+        src=" https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"
+      />
+
       <Header />
       <Component {...pageProps} />
     </div>
