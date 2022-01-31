@@ -1,111 +1,249 @@
 import React from 'react';
 import MoIndex from '../components/MoIndex';
+import { Tween, Timeline } from 'react-gsap';
 
 export default function Home() {
   return (
     <article className="main">
       <div className="homePCWrap">
-        <div className="home-left">
-          <ul className="left-stamp">
-            <li>
-              <img src="img/main-stamp.png" /> <span>재능 수요조사</span>
-            </li>
-            <li>
-              <img src="img/main-stamp.png" />
-              <span>Q&A 목록</span>
-            </li>
-            <li>
-              <img src="img/main-stamp.png" /> <span>총괄진 원작인증</span>
-            </li>
-          </ul>
-
-          <li className="left-stamping">
-            <img src="img/stamping.png" />
-          </li>
-        </div>
+        <Tween
+          from={{ scale: 0 }}
+          stagger={{ from: 'center', amount: 1, grid: [3, 3] }}
+          duration={1}
+          delay={0.4}
+          ease="elastic.out(2, 0.5)"
+        >
+          <div className="home-left">
+            <ul className="left-stamp">
+              <Timeline
+                target={
+                  <>
+                    <li>
+                      <img src="img/main-stamp.png" />{' '}
+                      <span>재능 수요조사</span>
+                    </li>
+                    <li>
+                      <img src="img/main-stamp.png" />
+                      <span>Q&A 목록</span>
+                    </li>
+                    <li>
+                      <img src="img/main-stamp.png" />{' '}
+                      <span>총괄진 원작인증</span>
+                    </li>
+                  </>
+                }
+              >
+                <Tween
+                  from={{ x: '-50px' }}
+                  to={{ x: '0px' }}
+                  target={0}
+                  delay={4.4}
+                />
+                <Tween
+                  from={{ x: '-50px' }}
+                  to={{ x: '0px' }}
+                  target={1}
+                  delay={0.1}
+                />
+                <Tween
+                  from={{ x: '-50px' }}
+                  to={{ x: '0px' }}
+                  target={2}
+                  delay={0.1}
+                />
+              </Timeline>
+            </ul>
+            <Tween from={{ x: '200px', opacity: 0 }} duration={3} delay={3}>
+              <li className="left-stamping">
+                <img src="img/stamping.png" />
+              </li>
+            </Tween>
+          </div>
+        </Tween>
 
         <div className="home-middle">
-          <div
-            className="uk-grid-small uk-child-width-auto"
-            uk-grid
-            uk-countdown="date: 2022-03-01T12:18:21+00:00"
+          <Tween
+            from={{ x: '-100vw', opacity: 0 }}
+            duration={2}
+            delay={6.5}
+            ease={(x) =>
+              x < 0.5 ? 8 * x * x * x * x : 1 - Math.pow(-2 * x + 2, 4) / 2
+            }
           >
-            <label>신청서 접수 <br /> 시작까지</label>
-            <div>
-              <div className="uk-countdown-number uk-countdown-days"></div>
-              <div className="uk-countdown-label uk-margin-small uk-text-center uk-visible@s">
-                Days
+            <div
+              className="uk-grid-small uk-child-width-auto"
+              uk-grid
+              uk-countdown="date: 2022-03-01T12:18:21+00:00"
+            >
+              <label>
+                신청서 접수 <br /> 시작까지
+              </label>
+              <div>
+                <div className="uk-countdown-number uk-countdown-days"></div>
+                <div className="uk-countdown-label uk-margin-small uk-text-center uk-visible@s">
+                  Days
+                </div>
+              </div>
+              &nbsp;
+              <div>
+                <div className="uk-countdown-number uk-countdown-hours"></div>
+                <div className="uk-countdown-label uk-margin-small uk-text-center uk-visible@s">
+                  Hours
+                </div>
+              </div>
+              &nbsp;
+              <div>
+                <div className="uk-countdown-number uk-countdown-minutes"></div>
+                <div className="uk-countdown-label uk-margin-small uk-text-center uk-visible@s">
+                  Minutes
+                </div>
+              </div>
+              &nbsp;
+              <div>
+                <div className="uk-countdown-number uk-countdown-seconds"></div>
+                <div className="uk-countdown-label uk-margin-small uk-text-center uk-visible@s">
+                  Seconds
+                </div>
               </div>
             </div>
-            &nbsp;
-            <div>
-              <div className="uk-countdown-number uk-countdown-hours"></div>
-              <div className="uk-countdown-label uk-margin-small uk-text-center uk-visible@s">
-                Hours
-              </div>
-            </div>
-            &nbsp;
-            <div>
-              <div className="uk-countdown-number uk-countdown-minutes"></div>
-              <div className="uk-countdown-label uk-margin-small uk-text-center uk-visible@s">
-                Minutes
-              </div>
-            </div>
-            &nbsp;
-            <div>
-              <div className="uk-countdown-number uk-countdown-seconds"></div>
-              <div className="uk-countdown-label uk-margin-small uk-text-center uk-visible@s">
-                Seconds
-              </div>
-            </div>
-          </div>
+          </Tween>
 
-          <li className="middle-schedule">
-            <img src="img/schedule.png" />
-          </li>
-
+          <Tween
+            from={{ y: '200px', opacity: 0 }}
+            duration={2}
+            delay={2.2}
+            ease="elastic.out(0.2, 0.1)"
+          >
+            <li className="middle-schedule">
+              <img src="img/schedule.png" />
+            </li>
+          </Tween>
+          <Tween from={{ opacity: 0 }} delay={4} duration={8}>
+            <li className="light">
+              <img src="img/light.png" alt="light" />
+            </li>
+            <li className="light2">
+              <img src="img/light.png" alt="light" />
+            </li>
+          </Tween>
           <div className="middle-row">
-            <li className="row-ac1 uk-inline">
-              <img src="img/ac-hover1.png" />
-              <div className="uk-position-top-right uk-overlay">
-                조사 가이드
-              </div>
-            </li>
-            <li className="row-ac2 uk-inline">
-              <img src="img/ac-hover2.png" />
-              <div className="uk-position-top-right uk-overlay">
-                캐릭터 가이드
-              </div>
-            </li>
+            <Tween
+              from={{ x: '200px' }}
+              stagger={0.2}
+              delay={1.2}
+              opacity={0}
+              ease="elastic.out(0.2, 0.1)"
+            >
+              <li className="row-ac1 uk-inline">
+                <img src="img/ac-hover1.png" />
+                <div className="uk-position-top-right uk-overlay">
+                  조사 가이드
+                </div>
+              </li>
+            </Tween>
+
+            <Tween
+              from={{ y: '200px' }}
+              stagger={0.2}
+              delay={1.5}
+              opacity={0}
+              ease="elastic.out(0.2, 0.1)"
+            >
+              <li className="row-ac2 uk-inline">
+                <img src="img/ac-hover2.png" />
+                <div className="uk-position-top-right uk-overlay">
+                  캐릭터 가이드
+                </div>
+              </li>
+            </Tween>
           </div>
           <div className="middle-row-mascot">
-            <li className="leftMascot">
-              <img src="img/mascot3.png" />
-            </li>
-            <li className="middleMascot">
-              <img src="img/mascot1.png" />
-            </li>
-            <li className="rightMascot">
-              <img src="img/mascot2.png" />
-            </li>
+            <Timeline
+              target={
+                <>
+                  <li className="leftMascot">
+                    <img src="img/mascot3.png" />
+                  </li>
+                  <li className="middleMascot">
+                    <img src="img/mascot1.png" />
+                  </li>
+                  <li className="rightMascot">
+                    <img src="img/mascot2.png" />
+                  </li>
+                </>
+              }
+            >
+              <Tween
+                from={{ scale: 0 }}
+                duration={1}
+                ease="elastic.out(1, 0.3)"
+                target={0}
+                delay={6}
+              />
+              <Tween
+                from={{ scale: 0 }}
+                duration={1}
+                ease="elastic.out(1, 0.3)"
+                target={2}
+                delay={0.1}
+              />
+              <Tween
+                from={{ scale: 0 }}
+                duration={1}
+                target={1}
+                ease="elastic.out(1, 0.3)"
+                delay={0.1}
+              />
+            </Timeline>
           </div>
         </div>
 
         <div className="home-right">
-          <li className="right-twitter">
-            <img src="img/twitter.png" />
-          </li>
-          <li className="right-kirring">
-            <img src="img/kirring.png" />
-          </li>
-          <li className="right-search">
-            <img src="img/search.png" />
-          </li>
-          <li className="right-newspaper">
-            <img src="img/newspaper.png" />
-          </li>
+          <Tween
+            from={{ x: '200px', rotation: 1200, opacity: 0 }}
+            duration={2}
+            ease="back.out(1.7)"
+            delay={5.8}
+          >
+            <li className="right-twitter">
+              <img src="img/twitter.png" />
+            </li>
+          </Tween>
+          <Tween
+            from={{ x: '-300px', opacity: 0 }}
+            duration={3}
+            delay={3}
+            ease="back.out(1.7)"
+          >
+            <li className="right-kirring">
+              <img src="img/kirring.png" />
+            </li>
+          </Tween>
+
+          <Tween
+            from={{ scale: 0, opacity: 0 }}
+            duration={2}
+            delay={11}
+            ease="back.out(1.7)"
+          >
+            <li className="right-search">
+              <img src="img/search.png" />
+            </li>
+          </Tween>
+
+          <Tween
+            from={{ x: '-300px', opacity: 0 }}
+            duration={3}
+            delay={3}
+            ease="back.out(1.7)"
+          >
+            <li className="right-newspaper">
+              <img src="img/newspaper.png" />
+            </li>
+          </Tween>
         </div>
       </div>
+
       <MoIndex />
     </article>
   );

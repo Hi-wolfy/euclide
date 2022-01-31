@@ -16,15 +16,15 @@
 
 // PC홈
 .homePCWrap {
-  width: 1200px;
-  margin: 40px auto 0;
+  width: 1400px;
+  margin: 24px auto 0;
   display: flex;
   flex-direction: row;
   align-items: center;
   font-family: 'Noto Serif KR', serif;
 
   .home-left {
-    width: 150px;
+    width: 160px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -57,15 +57,15 @@
     }
 
     .left-stamping {
-      width: 320px;
+      width: 370px;
       transform: translate(30px, 70px);
-      // 위에거 translate로 바꿔야 할듯함
-      z-index: 5;
+      animation: float4 3s ease-in-out infinite;
+      animation-delay: 9s;
     }
   }
 
   .home-middle {
-    width: 900px;
+    width: 1040px;
     display: flex;
     position: relative; //mascot 컨텐츠 부모요소
     flex-direction: column;
@@ -73,6 +73,27 @@
 
     .middle-schedule {
       filter: drop-shadow(5px 45px 20px rgba(94, 50, 18, 0.3));
+    }
+
+    .light {
+      position: absolute;
+      width: 200px;
+      left: 0;
+      top: 4vh;
+      z-index: 200;
+      animation: light 7s ease-in-out infinite;
+      transform: translate(-40px, 30px);
+      animation-delay: 12s;
+    }
+
+    .light2 {
+      position: absolute;
+      width: 150px;
+      right: 0;
+      top: 20vh;
+      z-index: 200;
+      animation: light2 9s ease-in-out infinite;
+      animation-delay: 6s;
     }
 
     .uk-grid-small {
@@ -84,7 +105,7 @@
       justify-content: left;
       color: #000;
       padding-left: 30px;
-      transform: translateY(60px);
+      transform: translateY(80px);
 
       label {
         font-size: 0.75rem;
@@ -150,6 +171,9 @@
       width: 190px;
       filter: drop-shadow(5px 15px 5px rgba(0, 0, 0, 0.2));
     }
+    li.leftMascot:hover {
+      animation: mascot 1s ease-in-out infinite;
+    }
 
     @keyframes float {
       0% {
@@ -196,6 +220,18 @@
       }
     }
 
+    @keyframes float4 {
+      0% {
+        transform: translate(30px, 70px);
+      }
+      50% {
+        transform: translate(35px, 70px);
+      }
+      100% {
+        transform: translate(30px, 70px);
+      }
+    }
+
     @keyframes mascot {
       0% {
         transform: rotate(0deg);
@@ -205,6 +241,63 @@
       }
       100% {
         transform: rotate(0deg);
+      }
+    }
+
+    @keyframes light {
+      0% {
+        transform: translate(-40px, 30px);
+        opacity: 1;
+      }
+      20% {
+        opacity: 0;
+      }
+      25% {
+        transform: translate(-90px, 120px);
+        opacity: 1;
+      }
+      50% {
+        opacity: 0;
+      }
+      75% {
+        transform: translate(170px, 90px);
+        opacity: 1;
+      }
+      100% {
+        transform: translate(-40px, 30px);
+        opacity: 0.5;
+      }
+    }
+
+    @keyframes light2 {
+      0% {
+        transform: translate(0, 0);
+        opacity: 1;
+      }
+      20% {
+        opacity: 0;
+      }
+      25% {
+        transform: translate(100px, -40px);
+        opacity: 1;
+      }
+      32% {
+        opacity: 0;
+      }
+      37% {
+        transform: translate(180px, 40px);
+        opacity: 1;
+      }
+      50% {
+        opacity: 0;
+      }
+      75% {
+        transform: translate(-20px, -80px);
+        opacity: 1;
+      }
+      100% {
+        transform: translate(0, 0);
+        opacity: 0.5;
       }
     }
 
@@ -227,12 +320,15 @@
       transform: translateY(10px);
       filter: drop-shadow(5px 15px 5px rgba(0, 0, 0, 0.2));
     }
+    li.rightMascot:hover {
+      animation: mascot 1s ease-in-out infinite;
+    }
   }
 
   //  ---------
 
   .home-right {
-    width: 150px;
+    width: 200px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -240,7 +336,12 @@
 
     .right-twitter {
       width: 40%;
-      transform: translate(-30px, 24px);
+      transform: translate(-80px, 84px);
+    }
+
+    .right-twitter:hover {
+      transform: translateY(10px);
+      filter: drop-shadow(5px 45px 20px rgba(94, 50, 18, 0.3));
     }
 
     .right-kirring {
