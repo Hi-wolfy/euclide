@@ -10,6 +10,7 @@ import Script from 'next/script';
 function MyApp({ Component, pageProps }) {
   return (
     <div className="MainWrap">
+      <Script src="//cdn.jsdelivr.net/npm/sweetalert2@11" />
       <Script
         src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
         integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
