@@ -79,9 +79,10 @@
     filter: drop-shadow(5px 10px 15px rgba(161, 84, 15, 0.7));
   }
 
-  .uk-width-3-4.uk-active {
-    padding: 0;
-    margin: 0 auto;
+  h3 {
+    font-size: 1.6rem;
+    font-family: 'Noto Serif KR', serif;
+    font-weight: 900;
   }
 
   p {
@@ -115,6 +116,16 @@
           url(/img/logo.png);
       }
     }
+    .awssld__bullets--active {
+      background-color: #da4500;
+    }
+  }
+}
+
+@media all and (min-width: 551px) and (max-width: 768px) {
+  .worldWrap {
+    width: 100%;
+    overflow: hidden;
   }
 }
 
@@ -165,6 +176,10 @@
       font-size: 0.73rem;
       padding: 0 1.4rem;
       line-height: 1.7;
+    }
+
+    h3 {
+      font-size: 1.2rem;
     }
 
     .bottomMascot {

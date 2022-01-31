@@ -1,7 +1,7 @@
 .noticeWrap {
   width: 1000px;
   margin: 0 auto;
-  padding: 100px 0;
+  padding: 0 0 60px;
   height: 100%;
 
   .notice-frame {
@@ -58,6 +58,10 @@
   .noticeWrap {
     width: 100%;
     margin: 0 auto;
+
+    .notice-content h2 {
+      width: 140px;
+    }
   }
 
   .noticePaper {

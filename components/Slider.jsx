@@ -18,7 +18,8 @@ export default function Slider() {
     <AwesomeSlider animation="cubeAnimation" organicArrows={false}>
       <div>
         <p>
-          <img src="img/frame-5.png" width="180px" /> <br /> <br />
+          <img src="img/frame-5.png" width="180px" /> <br />
+          <h3>#0 | INTRO</h3> <br />
           가장 소중하고 평범한 시간. <br />
           우리는 종종 그런 것을 일상이라고 부르곤 합니다.
           <br />
@@ -43,6 +44,7 @@ export default function Slider() {
       </div>
       <div>
         <p>
+          <h3>#1 | 세계에 대한 이야기</h3> <br />
           여러분은 각자가 속한 세계 가운데 살아가고 있습니다. 지구인일 수도
           있고, 화성인일 수도 있고… 천사나 악마, 어쩌면 작은 수인일 수도 있죠.
           <br /> <br /> 그 환경은 저마다 다를 것이고, 당신이 가지고 있는 모습도
@@ -77,6 +79,7 @@ export default function Slider() {
       </div>
       <div>
         <p>
+          <h3>#2 | 캐릭터 설정에 대하여</h3> <br />
           - 여러분은 각기 다른 세계에서 초대장을 받았습니다. 발신자는 유클리드
           호텔 지배인이라고 되어 있네요. 그는 당신에게 특별한 능력이 있다고
           믿는다며, 특별한 경험혹은, 특별한 것을 선물해 주겠다는 말과 함께
