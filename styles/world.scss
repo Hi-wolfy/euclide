@@ -1,3 +1,10 @@
+.mobileNone {
+  display: flex;
+}
+.PCNone {
+  display: none;
+}
+
 .swal2-popup.swal2-modal.swal2-show {
   width: 700px;
   margin: 0 auto !important;
@@ -98,6 +105,13 @@
 }
 
 @media all and (min-width: 320px) and (max-width: 550px) {
+  .mobileNone {
+    display: none;
+  }
+  .PCNone {
+    display: flex;
+  }
+
   .worldWrap {
     width: 95%;
     overflow-x: hidden;

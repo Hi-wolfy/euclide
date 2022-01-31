@@ -5,8 +5,15 @@ export default function World() {
   return (
     <div className="worldWrap">
       <img className="worldTitle" src="img/world.png" width="180px" />
-      {/* <Slider /> */}
-      <MobileSlider />
+      <p className="mobileNone">
+        {' '}
+        <Slider />{' '}
+      </p>
+      <p className="PCNone">
+        {' '}
+        <MobileSlider />
+      </p>
+
       {/* <div className="worldRow">
         <img onClick={SwalPlay} src="img/letter-cont2.png" />
         <img src="img/letter-cont2.png" />
