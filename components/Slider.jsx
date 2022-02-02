@@ -12,6 +12,7 @@ export default function Slider() {
       html: '<img src="img/letter-cont.png" /> ',
       showConfirmButton: false,
       background: 'none',
+      className:'dd'
     });
   };
   return (

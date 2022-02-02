@@ -1,4 +1,5 @@
 import React from 'react';
+import 'react-responsive-modal/styles.css';
 import '../styles/main.scss';
 import '../styles/notice_system.scss';
 import '../styles/world.scss';

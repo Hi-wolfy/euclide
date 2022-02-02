@@ -1,3 +1,17 @@
+.guideModal {
+  max-width: 1100px;
+  width: 100%;
+}
+
+.swal2-popup.swal2-modal.swal2-show {
+  width: 620px;
+  margin: 0 auto;
+  padding: 0;
+}
+.swal2-html-container img {
+  width: 100%;
+}
+
 .main {
   width: 100vw;
   height: 100vh;
@@ -16,15 +30,16 @@
 
 // PC홈
 .homePCWrap {
-  width: 1400px;
-  margin: 24px auto 0;
+  width: 1200px;
+  margin: 0 auto;
+  padding: 24px 0;
   display: flex;
   flex-direction: row;
   align-items: center;
   font-family: 'Noto Serif KR', serif;
 
   .home-left {
-    width: 160px;
+    width: 150px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -57,7 +72,7 @@
     }
 
     .left-stamping {
-      width: 370px;
+      width: 340px;
       transform: translate(30px, 70px);
       animation: float4 3s ease-in-out infinite;
       animation-delay: 9s;
@@ -65,7 +80,7 @@
   }
 
   .home-middle {
-    width: 1040px;
+    width: 900px;
     display: flex;
     position: relative; //mascot 컨텐츠 부모요소
     flex-direction: column;
@@ -132,13 +147,13 @@
       .row-ac1 {
         transform: rotate(-1deg);
         position: relative;
-        width: 700px;
+        width: 550px;
         filter: drop-shadow(5px 45px 20px rgba(94, 50, 18, 0.6));
       }
       .row-ac2 {
         transform: rotate(0.5deg);
         position: relative;
-        width: 500px;
+        width: 400px;
         filter: drop-shadow(5px 45px 20px rgba(94, 50, 18, 0.6));
       }
 
@@ -301,6 +316,32 @@
       }
     }
 
+    @keyframes kirring {
+      0% {
+        transform: rotate(0deg);
+      }
+      20% {
+        transform: rotate(-2deg);
+      }
+      25% {
+        transform: rotate(2deg);
+      }
+      32% {
+        transform: rotate(0deg);
+      }
+
+      75% {
+        transform: rotate(2deg);
+      }
+
+      80% {
+        transform: rotate(-2deg);
+      }
+      100% {
+        transform: rotate(0deg);
+      }
+    }
+
     li.middleMascot {
       width: 146px;
       position: absolute;
@@ -328,7 +369,7 @@
   //  ---------
 
   .home-right {
-    width: 200px;
+    width: 150px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -347,6 +388,8 @@
     .right-kirring {
       width: 100%;
       margin: 8px 0 30px;
+      animation: kirring 9s ease-in-out infinite;
+      animation-delay: 6s;
     }
 
     .right-search {
@@ -358,7 +401,7 @@
     }
 
     .right-newspaper {
-      width: 200%;
+      width: 180%;
       position: relative;
       z-index: 5;
       transform: translateY(70px);
@@ -390,6 +433,88 @@
 
     img {
       width: 100%;
+    }
+  }
+}
+
+@media all and (min-width: 1921px) {
+  .homePCWrap {
+    width: 1400px;
+    margin: 0 auto;
+    padding: 0;
+
+    .home-left {
+      width: 160px;
+    }
+    .left-stamp {
+      width: 90%;
+    }
+    .left-stamping {
+      width: 370px;
+      transform: (30px, 70px);
+      animation: float4 3s ease-in-out infinite;
+      animation-delay: 9s;
+    }
+
+    .home-middle {
+      width: 1040px;
+
+      .row-ac1 {
+        width: 700px;
+      }
+
+      .row-ac2 {
+        width: 500px;
+      }
+
+      li.leftMascot {
+        width: 190px;
+      }
+    }
+
+    li.middleMascot {
+      width: 146px;
+      position: absolute;
+      bottom: 0;
+      left: 15%;
+    }
+    li.middleMascot:hover {
+      animation: mascot 1s ease-in-out infinite;
+    }
+
+    li.rightMascot {
+      width: 200px;
+      position: relative;
+      left: 10%;
+      transform: translateY(10px);
+    }
+    .home-right {
+      width: 200px;
+      display: flex;
+
+      padding: 24px 0;
+
+      .right-twitter {
+        width: 40%;
+        transform: translate(-80px, 84px);
+      }
+
+      .right-kirring {
+        width: 100%;
+        margin: 8px 0 30px;
+      }
+
+      .right-search {
+        width: 130%;
+
+        transform: translate(-20px, 90px);
+      }
+
+      .right-newspaper {
+        width: 200%;
+
+        transform: translateY(70px);
+      }
     }
   }
 }

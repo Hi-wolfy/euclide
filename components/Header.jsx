@@ -31,7 +31,7 @@ export default function header() {
           </Link>
         </li>
 
-        <li uk-tooltip="title: 아직 손님들이 모이지 않았습니다.; pos: bottom-right">
+        <li uk-tooltip="title: 아직 손님들이 모이지 않았습니다.; pos: bottom-right" style={{cursor: 'wait'}}>
           {/* <Link href="/guest/hiwolfy">
             <a>GUESTS</a>
           </Link> */}

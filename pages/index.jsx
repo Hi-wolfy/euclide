@@ -1,8 +1,16 @@
-import React from 'react';
+import React, { useState } from 'react';
+import ReactDOM from 'react-dom';
+import { Modal } from 'react-responsive-modal';
 import MoIndex from '../components/MoIndex';
 import { Tween, Timeline } from 'react-gsap';
+import Link from 'next/link';
 
 export default function Home() {
+  const [open, setOpen] = useState(false);
+
+  const onOpenModal = () => setOpen(true);
+  const onCloseModal = () => setOpen(false);
+
   return (
     <article className="main">
       <div className="homePCWrap">
@@ -19,16 +27,36 @@ export default function Home() {
                 target={
                   <>
                     <li>
-                      <img src="img/main-stamp.png" />{' '}
+                      <img
+                        src="img/main-stamp.png"
+                        onClick={() =>
+                          window.open(
+                            'https://docs.google.com/spreadsheets/d/1DMJEU0dcDB6UrjEv1uWwZ4RlZRUXy549CPIuR3NMZEE/edit?usp=sharing',
+                            '_blank',
+                          )
+                        }
+                      />
                       <span>재능 수요조사</span>
                     </li>
                     <li>
-                      <img src="img/main-stamp.png" />
+                      <img
+                        src="img/main-stamp.png"
+                        onClick={() =>
+                          window.open(
+                            'https://docs.google.com/spreadsheets/d/1DMJEU0dcDB6UrjEv1uWwZ4RlZRUXy549CPIuR3NMZEE/edit?usp=sharing',
+                            '_blank',
+                          )
+                        }
+                      />
                       <span>Q&A 목록</span>
                     </li>
                     <li>
-                      <img src="img/main-stamp.png" />{' '}
-                      <span>총괄진 원작인증</span>
+                      <Link href="/danganCertifyingShot">
+                        <a>
+                          <img src="img/main-stamp.png" />
+                          <span>총괄진 원작인증</span>
+                        </a>
+                      </Link>
                     </li>
                   </>
                 }
@@ -135,12 +163,28 @@ export default function Home() {
               ease="elastic.out(0.2, 0.1)"
             >
               <li className="row-ac1 uk-inline">
-                <img src="img/ac-hover1.png" />
+                <img
+                  src="img/ac-hover1.png"
+                  onClick={onOpenModal}
+                  style={{ cursor: 'pointer' }}
+                  className="ac1"
+                />
                 <div className="uk-position-top-right uk-overlay">
-                  조사 가이드
+                  종족 설정 가이드
                 </div>
               </li>
             </Tween>
+
+            <Modal
+              open={open}
+              onClose={onCloseModal}
+              center
+              classNames={{
+                modal: 'guideModal',
+              }}
+            >
+              <img src="img/index-guide1.png" />
+            </Modal>
 
             <Tween
               from={{ y: '200px' }}
@@ -150,9 +194,9 @@ export default function Home() {
               ease="elastic.out(0.2, 0.1)"
             >
               <li className="row-ac2 uk-inline">
-                <img src="img/ac-hover2.png" />
+                <img src="img/ac-hover2.png" style={{ cursor: 'pointer' }} />
                 <div className="uk-position-top-right uk-overlay">
-                  캐릭터 가이드
+                  조사 & 재판 가이드
                 </div>
               </li>
             </Tween>
@@ -216,7 +260,9 @@ export default function Home() {
             ease="back.out(1.7)"
           >
             <li className="right-kirring">
-              <img src="img/kirring.png" />
+              <a href="https://twitter.com/Euclid_Hotel">
+                <img src="img/kirring.png" />
+              </a>
             </li>
           </Tween>
 
