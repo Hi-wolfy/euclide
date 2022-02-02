@@ -131,10 +131,14 @@ header {
   font-family: 'Do Hyeon', sans-serif;
   text-align: center;
   line-height: 1.5;
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.11), 0 3px 15px rgba(0, 0, 0, 0.11);
+  border-radius: 100px;
 
   h1 {
     font-size: 2rem;
-    padding: 1.8rem 0;
+    padding: 2rem 0 1rem;
+    font-family: 'Noto Serif KR', serif;
+    font-weight: 900;
   }
 
   .Custom404-row {
@@ -142,12 +146,13 @@ header {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    padding: 1.4rem 1.4rem 3rem;
+    padding: 0.4rem 1.4rem 3rem;
 
     p {
       width: 300px;
       color: #666;
-      font-size: 1.05rem;
+      font-size: 1.2rem;
+      font-weight: 100;
     }
     img {
       width: 200px;
