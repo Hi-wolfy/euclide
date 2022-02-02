@@ -43,7 +43,7 @@ export default function Home() {
                         src="img/main-stamp.png"
                         onClick={() =>
                           window.open(
-                            'https://docs.google.com/spreadsheets/d/1DMJEU0dcDB6UrjEv1uWwZ4RlZRUXy549CPIuR3NMZEE/edit?usp=sharing',
+                            'https://docs.google.com/document/d/170Q1nxQXQUBP3l63tLrp-HxTsfURokzPVqnQ5Sv0zSU/edit',
                             '_blank',
                           )
                         }
@@ -249,8 +249,13 @@ export default function Home() {
             ease="back.out(1.7)"
             delay={5.8}
           >
-            <li className="right-twitter">
-              <img src="img/twitter.png" />
+            <li className="right-twitter" style={{ cursor: 'pointer' }}>
+              <img
+                src="img/twitter.png"
+                onClick={() =>
+                  window.open('https://twitter.com/Euclid_Hotel', '_blank')
+                }
+              />
             </li>
           </Tween>
           <Tween
@@ -260,9 +265,7 @@ export default function Home() {
             ease="back.out(1.7)"
           >
             <li className="right-kirring">
-              <a href="https://twitter.com/Euclid_Hotel">
-                <img src="img/kirring.png" />
-              </a>
+              <img src="img/kirring.png" />
             </li>
           </Tween>
 
