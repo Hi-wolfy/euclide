@@ -1,0 +1,72 @@
+.GuestWrap{
+    width:850px;
+    margin:0 auto;
+    display:flex;
+    flex-direction:column;
+
+    h2{
+        text-align:center;
+        margin: 24px 0;
+    }
+
+    .GuestRow{
+        display:flex;
+        flex-direction:row;
+        align-items:center;
+        justify-content:center;
+        flex-wrap:wrap;
+     
+
+        a{
+            width:22%;
+
+               position:relative;
+    
+            margin:10px;  
+          
+           
+        }
+        a img:hover{
+                        box-shadow: 0 2px 15px rgba(0, 0, 0, 0.11), 0 3px 15px rgba(0, 0, 0, 0.6); 
+            transform:scale(1.05);
+        }
+
+        a img{
+              transition:0.2s all ease-in-out;
+            width:100%;
+                border-radius: 50% 20% / 10% 40%;
+                   box-shadow: 0 2px 15px rgba(0, 0, 0, 0.11), 0 3px 15px rgba(0, 0, 0, 0.2); 
+        }
+        // p{
+        // display:flex;
+        // flex-direction:column;
+        //     align-items:center;
+        //     justify-content:center;
+        //     position:absolute;
+        //     z-index:5;
+        //     bottom:0;
+        //     left:0;
+        //     color:#fff;
+        //   width:100%;
+        //   h4{
+        //       font-size:1.3rem;
+        //   }
+        //     h6{
+        //       font-size:0.85rem;
+        //   }
+     
+        // }
+      
+    }
+}
+
+
+ @media all and (min-width: 320px) and (max-width: 768px) {
+.GuestWrap{
+    width:100%;
+    a{
+        width:30% !important;
+        margin:4px 2px !important;
+    }
+}
+ }

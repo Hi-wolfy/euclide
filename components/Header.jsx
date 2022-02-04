@@ -4,6 +4,7 @@ import Link from 'next/link';
 export default function header() {
   return (
     <header>
+   
       <div className="header">
         <li>
           <Link href="/Notice">
@@ -38,6 +39,7 @@ export default function header() {
           GUESTS
         </li>
       </div>
+   
     </header>
   );
 }

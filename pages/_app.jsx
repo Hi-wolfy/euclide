@@ -9,6 +9,7 @@ import Header from '../components/Header';
 import Script from 'next/script';
 
 function MyApp({ Component, pageProps }) {
+
   return (
     <div className="MainWrap">
       <Script src="//cdn.jsdelivr.net/npm/sweetalert2@11" />
@@ -38,8 +39,10 @@ function MyApp({ Component, pageProps }) {
 
       <Script src="https://cdn.jsdelivr.net/npm/uikit@3.10.1/dist/js/uikit.min.js" />
       <Script src="https://cdn.jsdelivr.net/npm/uikit@3.10.1/dist/js/uikit-icons.min.js" />
+     
       <Header />
       <Component {...pageProps} />
+     
     </div>
   );
 }
