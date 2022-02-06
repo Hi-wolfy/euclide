@@ -31,9 +31,8 @@
 // PC홈
 .homePCWrap {
   width: 1200px;
-height: 75vh;
-  margin: 0 auto;
-  padding: 24px 0;
+  height: 80vh;
+  margin: 60px auto;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -226,13 +225,13 @@ height: 75vh;
 
     @keyframes float3 {
       0% {
-        transform: translatey(0px);
+        transform: translateY(-100px);
       }
       50% {
-        transform: translateY(10px);
+        transform: translateY(-80px);
       }
       100% {
-        transform: translatey(0px);
+        transform: translateY(-100px);
       }
     }
 
@@ -371,6 +370,8 @@ height: 75vh;
 
   .home-right {
     width: 150px;
+    height: 75vh;
+
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -395,18 +396,18 @@ height: 75vh;
 
     .right-search {
       width: 130%;
-      position: relative;
       z-index: 10;
       transform: translate(-20px, 90px);
       animation: float2 8s ease-in-out infinite;
     }
 
     .right-newspaper {
-      width: 180%;
-      position: relative;
+      width: 340px;
       z-index: 5;
-      transform: translateY(70px);
       animation: float3 8s ease-in-out infinite;
+    }
+    .right-newspaper img {
+      margin-top: 100px;
     }
   }
   img {
@@ -441,7 +442,7 @@ height: 75vh;
 @media all and (min-width: 1921px) {
   .homePCWrap {
     width: 1400px;
-    height: 83vh;
+    height: 90vh;
     margin: 0 auto;
     padding: 0 0;
 
@@ -492,6 +493,7 @@ height: 75vh;
     }
     .home-right {
       width: 200px;
+      height: 83vh;
       display: flex;
 
       padding: 24px 0;
@@ -508,14 +510,16 @@ height: 75vh;
 
       .right-search {
         width: 130%;
-
+        margin-top: -100px;
         transform: translate(-20px, 90px);
       }
 
       .right-newspaper {
-        width: 200%;
+        width: 400px;
+      }
 
-        transform: translateY(70px);
+      .right-newspaper img {
+        margin-top: 0px;
       }
     }
   }
