@@ -31,8 +31,7 @@
 // PC홈
 .homePCWrap {
   width: 1200px;
-  min-height: 75vh;
-  max-height: 85vh;
+height: 75vh;
   margin: 0 auto;
   padding: 24px 0;
   display: flex;
@@ -442,6 +441,7 @@
 @media all and (min-width: 1921px) {
   .homePCWrap {
     width: 1400px;
+    height: 83vh;
     margin: 0 auto;
     padding: 0 0;
 
