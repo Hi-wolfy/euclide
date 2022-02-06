@@ -31,6 +31,8 @@
 // PC홈
 .homePCWrap {
   width: 1200px;
+  min-height: 75vh;
+  max-height: 85vh;
   margin: 0 auto;
   padding: 24px 0;
   display: flex;
