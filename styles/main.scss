@@ -70,7 +70,7 @@ body {
   min-height: 100vh;
   height: 100%;
   width: 100vw;
-  background-size: auto, auto;
+  background-size: contain;
 }
 
 .MainWrap {
@@ -119,6 +119,35 @@ header {
 
   img {
     width: 30px;
+  }
+}
+
+//Loading 페이지
+
+.LoadingWrap {
+  position: absolute;
+  top: 0;
+  z-index: 1000;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: #fff;
+  font-family: 'Noto Serif KR', serif;
+  letter-spacing: 0.15em;
+}
+.LoadingText {
+  padding: 40px;
+  margin-top: 40px;
+  color: #666;
+
+  p:last-child {
+    color: #000;
+    font-weight: 900;
   }
 }
 

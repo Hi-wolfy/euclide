@@ -69,6 +69,9 @@
         align-items: center;
         justify-content: center;
       }
+      li:hover {
+        color: #da4500;
+      }
     }
 
     .left-stamping {
@@ -150,13 +153,21 @@
         width: 550px;
         filter: drop-shadow(5px 45px 20px rgba(94, 50, 18, 0.6));
       }
+
+      .row-ac1 img:hover {
+        transition: 0.5s all;
+        filter: drop-shadow(5px 45px 20px rgba(94, 50, 18, 0.7));
+      }
       .row-ac2 {
         transform: rotate(0.5deg);
         position: relative;
         width: 400px;
         filter: drop-shadow(5px 45px 20px rgba(94, 50, 18, 0.6));
       }
-
+      .row-ac2 img:hover {
+        transition: 0.5s all;
+        filter: drop-shadow(5px 45px 20px rgba(94, 50, 18, 0.7));
+      }
       .uk-inline div {
         transform: translate(-10px, 20px);
         font-size: 1.3rem;
