@@ -432,20 +432,29 @@
   }
 
   .homeMobileWrap {
+    height: 100%;
+    width: 100%;
+    background-color: #fff;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     padding: 7rem 0 10rem;
 
-    li {
+    img {
       max-width: 400px;
       min-width: 300px;
       width: 90%;
       transform: translatex(8px);
     }
 
-    img {
-      width: 100%;
+    button:nth-child(2) {
+      margin-top: 60px;
+    }
+
+    button {
+      padding: 6px 16px;
+      margin: 8px 0;
     }
   }
 }

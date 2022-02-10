@@ -19,13 +19,13 @@ export default function Start() {
   useEffect(() => {
     setTimeout(() => {
       setMent1('잔잔한 호텔 음악이 흘러나오고 있습니다...');
-    }, 1000);
+    }, 900);
   }, []);
 
   useEffect(() => {
     setTimeout(() => {
       setMent2('얼굴 없는 벨보이들이 하나둘씩 모여듭니다...');
-    }, 1800);
+    }, 2000);
   }, []);
 
   useEffect(() => {
