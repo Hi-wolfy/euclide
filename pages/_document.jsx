@@ -23,10 +23,14 @@ class MyDocument extends Document {
             name="viewport"
             content="width=device-width, initial-scale=1.0"
           />
-
-          <meta property="og:image" content="img/mascot7.png" />
-
-          <meta property="og:description" content="EUCLID_WORLD" />
+          <meta property="og:site_name" content="유클리드 호텔"></meta>
+          <meta property="og:image" content="img/ogImage.png" />
+          <meta property="og:image:width" content="1000" />
+          <meta property="og:image:height" content="630" />
+          <meta
+            property="og:description"
+            content="손님, 유클리드 호텔에 오신 것을 환영합니다."
+          />
           <meta property="og:title" content="EUCLID_HOTEL" />
 
           {/* reset */}
