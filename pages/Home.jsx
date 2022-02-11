@@ -196,12 +196,15 @@ export default function Home() {
                 <img
                   src="img/ac-hover2.png"
                   style={{ cursor: 'pointer' }}
-                  onClick={() => {
-                    alert('현재 준비중입니다!');
-                  }}
+                  onClick={() =>
+                    window.open(
+                      'https://docs.google.com/document/d/1X_Dr4yBTI_01MhG_snWDorzcKmCJ1HCJ0fm-ZkFjt_E/edit?usp=sharing',
+                      '_blank',
+                    )
+                  }
                 />
                 <div className="uk-position-top-right uk-overlay">
-                  조사 & 재판 가이드
+                  신청서 접수 양식
                 </div>
               </li>
             </Tween>

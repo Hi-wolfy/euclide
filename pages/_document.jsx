@@ -61,7 +61,7 @@ class MyDocument extends Document {
           <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin />
 
           <link
-            href="https://fonts.googleapis.com/css2?family=Do+Hyeon&family=Jua&family=Noto+Serif+KR:wght@300;400;700;900&display=swap"
+            href="https://fonts.googleapis.com/css2?Poor+Story&family=Noto+Serif+KR:wght@300;400;700;900&display=swap"
             rel="stylesheet"
           />
 
