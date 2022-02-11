@@ -9,11 +9,11 @@ class MyDocument extends Document {
 
   render() {
     return (
-      <Html>
+      <Html lang="ko" translage="no">
         <Head>
           <title>Euclide Hotel</title>
           <meta charset="UTF-8" />
-
+          <meta name="google" content="notranslate" />
           <meta
             name="description"
             content="유클리드 호텔에 오신 것을 환영합니다."
