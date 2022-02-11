@@ -14,22 +14,20 @@ class MyDocument extends Document {
           <title>Euclide Hotel</title>
           <meta charset="UTF-8" />
 
-          <meta name="description" content="날득씨의 프로필 사이트예요" />
+          <meta
+            name="description"
+            content="유클리드 호텔에 오신 것을 환영합니다."
+          />
           {/* <meta name="keywords" content="키워드,프로필,설명서,달늑대,날득씨" /> */}
           <meta
             name="viewport"
             content="width=device-width, initial-scale=1.0"
           />
 
-          {/* <meta property="og:image" content="./other/mainimage.png" /> 
-          이거 그거임 미리보기 이미지
-          */}
+          <meta property="og:image" content="img/mascot7.png" />
 
-          {/* <meta
-            property="og:description"
-            content="@Hi_wolfy의 커미션 사이트입니다!"
-          />
-          <meta property="og:title" content="Hi-wolfy's commission" /> */}
+          <meta property="og:description" content="EUCLID_WORLD" />
+          <meta property="og:title" content="EUCLID_HOTEL" />
 
           {/* reset */}
 
