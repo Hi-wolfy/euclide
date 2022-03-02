@@ -100,10 +100,10 @@ export default function Home() {
             <div
               className="uk-grid-small uk-child-width-auto"
               uk-grid
-              uk-countdown="date: 2022-03-01T12:18:21+00:00"
+              uk-countdown="date: 2022-03-07T13:00:00+00:00"
             >
               <label>
-                신청서 접수 <br /> 시작까지
+                신청서 접수 <br /> 마감까지
               </label>
               <div>
                 <div className="uk-countdown-number uk-countdown-days"></div>
